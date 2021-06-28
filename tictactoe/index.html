@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <script src="https://kit.fontawesome.com/63e1d65e2b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>tic tac toe</title>
+</head>
+<body>
+    <div class="header">
+        <h1>TIC TAC TOE</h1>
+    </div>
+    <div class="score">0 : 0</div>
+    <div class="content">
+        <div class="board">
+            <svg viewBox="0 0 100 100" class="box">
+                <line x1="15" y1="15" x2="85" y2="85" stroke="white" stroke-width="6%"></line>
+                <line x1="85" y1="15" x2="15" y2="85" stroke="white" stroke-width="6%"></line>
+            </svg>
+            <svg viewBox="0 0 100 100" class="box">
+                <circle cx="50%" cy="50%" r="35" stroke="#0c332e" stroke-width="6%" fill="none"></circle>
+            </svg>
+            <svg viewBox="0 0 100 100" class="box"></svg>
+            <svg viewBox="0 0 100 100" class="box"></svg>
+            <svg viewBox="0 0 100 100" class="box"></svg>
+            <svg viewBox="0 0 100 100" class="box"></svg>
+            <svg viewBox="0 0 100 100" class="box"></svg>
+            <svg viewBox="0 0 100 100" class="box"></svg>
+            <svg viewBox="0 0 100 100" class="box"></svg>
+        </div>
+        <div class="btn-container">
+            <button class="new">NEW GAME</button>
+            <button class="reset">RESET GAME</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

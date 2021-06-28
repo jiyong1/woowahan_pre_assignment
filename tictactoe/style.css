@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #26b2a2;
+    color: white;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    width: 70vw;
+    padding: .5em;
+    border-bottom: rgb(255, 188, 43) 2px dashed;
+}
+.score {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+}
+.content {
+    max-width: 450px;
+    margin: 0 auto;
+}
+.board {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    background-color: rgb(255, 188, 43);
+}
+.box {
+    background-color: #26b2a2;
+    cursor: pointer;
+}
+.box.pick {
+    cursor: none;
+}
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-container > button {
+    font-size: 1rem;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+@keyframes xani {
+    0% {
+        stroke-dashoffset: 99;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes oani {
+    0% {
+        stroke-dashoffset: 220;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+line {
+    stroke-dasharray: 99;
+    animation: xani .5s alternate;
+}
+circle {
+    stroke-dasharray: 220;
+    animation: oani 1s alternate;
+}
