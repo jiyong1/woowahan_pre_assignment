@@ -25,6 +25,12 @@ h1 {
     justify-content: center;
     padding: .5em;
 }
+.score > span {
+    margin: 0 1rem;
+}
+.score > .circle-score {
+    color: #0c332e;
+}
 .content {
     max-width: 450px;
     margin: 0 auto;
@@ -37,13 +43,15 @@ h1 {
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 5px;
     background-color: rgb(255, 188, 43);
+    z-index: 0;
 }
 .box {
     background-color: #26b2a2;
     cursor: pointer;
 }
-.box.pick {
-    cursor: none;
+.box > * {
+    transition: .5s;
+    transform-origin: 50% 50%;
 }
 .btn-container {
     width: 100%;
@@ -73,11 +81,19 @@ h1 {
         stroke-dashoffset: 0;
     }
 }
+@keyframes winner {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transfomr: scale(2);
+    }
+}
 line {
     stroke-dasharray: 99;
-    animation: xani .5s alternate;
+    animation: xani .3s forwards;
 }
 circle {
     stroke-dasharray: 220;
-    animation: oani 1s alternate;
+    animation: oani .6s forwards;
 }
