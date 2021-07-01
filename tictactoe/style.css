@@ -81,14 +81,6 @@ h1 {
         stroke-dashoffset: 0;
     }
 }
-@keyframes winner {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transfomr: scale(2);
-    }
-}
 line {
     stroke-dasharray: 99;
     animation: xani .3s forwards;
