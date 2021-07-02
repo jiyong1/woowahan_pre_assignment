@@ -12,3 +12,14 @@
   - 500px 이하 : 한개의 카드씩 6줄
   - 780px 이하 : 두개의 카드씩 3줄
   - 780px 초과 : 세개의 카드씩 2줄
+
+<br>
+
+## 결과
+
+![](README.assets/shoppingmall1.PNG)
+
+<br>
+
+![](README.assets/shoppingmall2.PNG)
+
