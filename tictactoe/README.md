@@ -26,3 +26,10 @@
 
 - NEW GAME 버튼 클릭 시 점수 초기화 및 새로운 게임 시작
 - RESET GAME 버튼 클릭 시 점수는 그대로, 새로운 게임 시작
+
+<br>
+
+## 결과
+
+![](README.assets/tictactoe.PNG)
+
